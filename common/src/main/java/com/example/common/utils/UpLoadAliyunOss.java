@@ -14,10 +14,10 @@ import java.io.InputStream;
  */
 public class UpLoadAliyunOss {
     public static String upload(MultipartFile file) {
-        String endpoint = "oss-cn-guangzhou.aliyuncs.com";
-        String buckerName = "zhangyuyetypora";
-        String OSSAccessKeyId = "LTAI5tCNy3mYdX9sUyZTFYHd";
-        String OSSAccessKeySecret = "g65q2vga5iQup8sVB0aKxjUNcJD80r";
+        String endpoint = "***************";
+        String buckerName = "***************";
+        String OSSAccessKeyId = "**************";
+        String OSSAccessKeySecret = "*****************";
         String dir = "music/";
         OSS ossClient = new OSSClientBuilder().build(endpoint, OSSAccessKeyId, OSSAccessKeySecret);
 
