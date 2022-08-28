@@ -1,0 +1,10 @@
+server:
+  port: 1999
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://127.0.0.1:1999/eureka/

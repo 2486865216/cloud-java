@@ -1,0 +1,15 @@
+.idea
+/user2000/src/test/
+/user2000/target
+
+/task2001/src/test/
+/task2001/target
+
+/eureka-server/src/test/
+/eureka-server/target
+
+/common/src/test/
+/common/target
+
+/api/src/test/
+/api/target

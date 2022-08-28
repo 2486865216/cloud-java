@@ -1,0 +1,38 @@
+server:
+  port: 2001
+
+spring:
+  application:
+    name: task-task
+
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/myTask
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  redis:
+    host: 120.24.204.157
+    port: 6379
+    database: 0
+    password:
+
+  rabbitmq:
+    host: 120.24.204.157
+    username: admin
+    password: 123
+    port: 5672
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:1999/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: task-2001
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
